@@ -25,9 +25,6 @@ struct ContentView: View {
         .overlay(alignment: .top) {
             Text("\(offset)")
         }
-        .onChange(of: offset) { newValue in
-            print(newValue)
-        }
     }
     
     @ViewBuilder func ItemCell(offset: Int, item: String) -> some View {
